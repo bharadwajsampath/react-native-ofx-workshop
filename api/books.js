@@ -13,7 +13,9 @@ const postNewBook = (bookDetails) => {
 
 const getAllBooks = () => {
   firebase.database().ref('books/').once('value').then((snapshot) => {
-    console.log(snapshot);
+    const allBooks = snapshot.toJSON();
+    console.log(allBooks);
+    return allBooks;
   });
 };
 

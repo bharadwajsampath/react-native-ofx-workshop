@@ -25,11 +25,11 @@ HomeStack.navigationOptions = {
   ),
 };
 
-const LinksStack = createStackNavigator({
-  Links: AddBookScreen,
+const AddBookStack = createStackNavigator({
+  AddBook: AddBookScreen,
 });
 
-LinksStack.navigationOptions = {
+AddBookStack.navigationOptions = {
   tabBarLabel: 'Add a Book',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
@@ -55,6 +55,6 @@ SettingsStack.navigationOptions = {
 
 export default createBottomTabNavigator({
   HomeStack,
-  LinksStack,
+  AddBookStack,
   SettingsStack,
 });
