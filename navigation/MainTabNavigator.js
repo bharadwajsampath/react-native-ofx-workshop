@@ -5,10 +5,12 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import AddBookScreen from '../screens/AddBookScreen';
+import EditBookScreen from '../screens/EditBookScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
+  Edit: EditBookScreen
 });
 
 HomeStack.navigationOptions = {
